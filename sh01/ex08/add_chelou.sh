@@ -1,7 +1,7 @@
 # convert to decimal
 to_dec() 
 {
-	local word="$1" base ="$2" digits="" i c p
+	local word="$1" base="$2" digits="" i c p
 	# loop through each character of input word
 	for ((i=0; i<${#word}; i++ )); do
 		# get character at position i in word
@@ -18,7 +18,6 @@ to_dec()
 
 # reconvret to base
 to_base() 
-{
 	local dec="$1" base="$2" bcdigits results="" i idx
 	# bc converts decimal numbers into digits of base
 	bcdigits=$(echo "obase=${#base}; $dec" | bc)
