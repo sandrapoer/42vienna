@@ -7,8 +7,8 @@ void	ft_print_comb2(void)
 	char	one;
 	char	two;
 
-	one = '0';
-	two = '0';
+	one = '00';
+	two = '01';
 	while (one >= '0' && one <= '9')
 	{
 		while (two >= '0' && two <= '9')
