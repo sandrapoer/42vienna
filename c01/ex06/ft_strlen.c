@@ -1,34 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_div_mod.c                                       :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: spoernba <spoernba@student.42vienna.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/18 14:18:56 by spoernba          #+#    #+#             */
-/*   Updated: 2026/08/18 14:56:15 by spoernba         ###   ########.fr       */
+/*   Created: 2026/08/19 09:40:30 by spoernba          #+#    #+#             */
+/*   Updated: 2026/08/19 10:29:50 by spoernba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //#include <stdio.h>
 
-void	ft_div_mod(int a, int b, int *div, int *mod)
+int	ft_strlen(char *str)
 {
-	*div = a / b;
-	*mod = a % b;
+	int	c;
+
+	c = 0;
+	while (str[c] != '\0')
+	{
+		c++;
+	}
+	return (c);
 }
 
 /*
 int	main(void)
 {
-	int	number;
-	int	c;
-	int d;
+	char	*str = "string";
 
-	c = 10;
-	d = 4;
-	ft_div_mod(c, d, &c, &d);
-	printf("%d\n%d", c, d);
+	printf("%d", ft_strlen(str));
 	return(0);
 }
 */

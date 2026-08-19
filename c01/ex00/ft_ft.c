@@ -1,31 +1,29 @@
-// header
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_ft.c                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: spoernba <spoernba@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/08/18 10:31:40 by spoernba          #+#    #+#             */
+/*   Updated: 2026/08/18 10:45:50 by spoernba         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-#include <unistd.h>
+//#include <stdio.h>
+
 void	ft_ft(int	*nbr)
 {
 	*nbr = 42;
 }
 
 /*
-// convert double digit numbers ino characters
-void	ft_nr2char(int	nbr)
-{
-	char c;
-
-	if (nbr >= 10)
-		ft_nr2char(nbr / 10);
-	// '0' converts incoming int into char
-	c = (nbr % 10) + '0';
-	write(1, &c, 1);
-}
-
 int	main(void)
 {
-	int	number = 0;
+	int	number;
 
 	ft_ft(&number);
-	ft_nr2char(number);
-	write(1, "\n", 1);
-	return(0);
+	printf("%d", number);
+	return (0);
 }
 */

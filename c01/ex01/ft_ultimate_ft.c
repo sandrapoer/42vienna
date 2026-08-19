@@ -5,45 +5,35 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: spoernba <spoernba@student.42vienna.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/18 09:10:51 by spoernba          #+#    #+#             */
-/*   Updated: 2026/08/18 09:10:57 by spoernba         ###   ########.fr       */
+/*   Created: 2026/08/18 10:47:04 by spoernba          #+#    #+#             */
+/*   Updated: 2026/08/18 10:59:45 by spoernba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+//#include <stdio.h>
 
-void    ft_ultimate_ft(int  ********nbr)
+void	ft_ultimate_ft(int	*********nbr)
 {
-    ********nbr = 42;
+	*********nbr = 42;
 }
 
 /*
-void ft_nr2char(int nbr)
+int	main(void)
 {
-    char c;
+	int	number;
+	int	*p1 = &number;
+	int	**p2 = &p1;
+	int	***p3 = &p2;
+	int	****p4 = &p3;
+	int *****p5 = &p4;
+	int ******p6 = &p5;
+	int *******p7 = &p6;
+	int ********p8 = &p7;
+	int *********nbr = &p8;
 
-    if (nbr >= 10)
-        ft_nr2char(nbr / 10);
-    c = (nbr % 10) + '0';
-    write(1, &c, 1);
-}
-
-int main(void)
-{
-    int number = 0;
-
-    int * pN1 = &number;
-    int ** pN2 = &pN1;
-    int *** pN3 = &pN2;
-    int **** pN4 = &pN3;
-    int ***** pN5 = &pN4;
-    int ****** pN6 = &pN5;
-    int ******* pN7 = &pN6;
-    int ******** pN8 = &pN7;
-    // the function wants the fully wrapped 8-star pointer
-    ft_ultimate_ft(pN8);
-    ft_nr2char(number);
-    write(1, "\n", 1);
-    return(0);
+	number = 0;
+	ft_ultimate_ft(nbr);
+	printf("%d", number);
+	return(0);
 }
 */
