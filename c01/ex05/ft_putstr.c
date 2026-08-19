@@ -6,13 +6,13 @@
 /*   By: spoernba <spoernba@student.42vienna.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/19 08:41:54 by spoernba          #+#    #+#             */
-/*   Updated: 2026/08/19 09:35:23 by spoernba         ###   ########.fr       */
+/*   Updated: 2026/08/19 13:46:57 by spoernba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_putchar(char *str)
+void	ft_putstr(char *str)
 {
 	int	c;
 
@@ -29,7 +29,7 @@ int	main(void)
 {
 	char	str[7] = "string";
 
-	ft_putchar(str);
+	ft_putstr(str);
 	return(0);
 }
 */

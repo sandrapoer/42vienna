@@ -6,7 +6,7 @@
 /*   By: spoernba <spoernba@student.42vienna.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/19 08:34:22 by spoernba          #+#    #+#             */
-/*   Updated: 2026/08/19 08:40:03 by spoernba         ###   ########.fr       */
+/*   Updated: 2026/08/19 13:45:11 by spoernba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,11 @@
 
 void	ft_ultimate_div_mod(int *a, int *b)
 {
+	int	i;
+
+	i = *a;
 	*a = *a / *b;
-	*b = *a % *b;
+	*b = i % *b;
 }
 
 /*
@@ -29,4 +32,5 @@ int	main(void)
 	ft_ultimate_div_mod(&a, &b);
 	printf("%d\n%d", a, b);
 	return(0);
-}*/
+}
+*/
