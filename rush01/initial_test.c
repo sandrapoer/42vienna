@@ -1,27 +1,24 @@
 #include <unistd.h>
-#include <stdlib.h>
 
 // Grid size = nxn
 // input size = n² (array len including spaces = nx2-1)
 
 
-#define SIZE 4
-
-static void print_grid(int grid[SIZE][SIZE])
+void print_grid(int grid[4][4])
 {
     char c;
     int  row;
     int  col;
 
     row = 0;
-    while (row < SIZE)
+    while (row < 4)
     {
         col = 0;
-        while (col < SIZE)
+        while (col < 4)
         {
             c = (char)('0' + grid[row][col]);
             write(1, &c, 1);
-            if (col < SIZE - 1)
+            if (col < 4 - 1)
                 write(1, " ", 1);
             col++;
         }
@@ -32,7 +29,7 @@ static void print_grid(int grid[SIZE][SIZE])
 
 int main(void)
 {
-    int grid[SIZE][SIZE] = {0};
+    int grid[4][4] = {0};
 
     print_grid(grid);
     return (0);
